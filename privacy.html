@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Family Quest Privacy</title>
+<meta name="description" content="How Family Quest handles information, including data from Google.">
+<style>
+  :root { --bg: #f6f6fb; --card: #fff; --text: #1d1d2b; --muted: #5d6178; --accent: #5b5bd6; --line: #e2e2ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14141c; --card: #1e1e29; --text: #ececf4; --muted: #a0a3b8; --accent: #9b9bf5; --line: #2e2e3d; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; }
+  .muted { color: var(--muted); }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  p, ul { margin: 0 0 12px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="muted">Family Quest · last updated November 14, 2026</p>
+
+  <p>Family Quest is a private chore tracker used by a single family.
+     It runs on a server in the family's home, and only members of that household use it.
+     This page explains what information it handles, and in particular what it does with data from Google.</p>
+
+  <h2>What Family Quest stores</h2>
+  <ul>
+    <li>The family members' names, photos and chore settings, and the chores they complete, along with points and allowance.</li>
+    <li>For adults who link a Google account: that account's email address and the access tokens Google issues for it.</li>
+  </ul>
+  <p>All of this is stored only on the family's home server. It isn't sent to any other server, sold or shared, and it isn't used for advertising or analytics.</p>
+
+  <h2>Data from Google</h2>
+  <p>When an adult links their Google account, Family Quest asks for:</p>
+  <ul>
+    <li><b>Google Tasks</b> (<code>https://www.googleapis.com/auth/tasks</code>). This lets Family Quest create a task list named "Family Quest", add chores to it as tasks, notice when a task is ticked off or deleted, and tick off or remove the tasks it created.
+        To find its own list, it looks at the names of the account's task lists.
+        It doesn't read, change or delete any other task list or the tasks in them.</li>
+    <li><b>Email address</b> (<code>openid</code>, <code>email</code>). This is used only to show which Google account is linked.</li>
+  </ul>
+  <p>Google data is used only to keep the "Family Quest" task list in step with the chores in the app. It isn't shared with anyone or used for any other purpose.</p>
+  <p>Family Quest's use and transfer of information received from Google APIs adheres to the
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+     including the Limited Use requirements.</p>
+
+  <h2>Removing access</h2>
+  <p>An adult can unlink their account at any time from the app's Parent tab.
+     Unlinking deletes the "Family Quest" task list from their Google account, revokes Family Quest's access, and erases the stored tokens and email address from the home server.
+     Access can also be removed at any time from <a href="https://myaccount.google.com/permissions">Google Account → Third-party apps &amp; services</a>.</p>
+
+  <h2>Children</h2>
+  <p>Children in the family use Family Quest only on the family's own devices. They don't create accounts or link Google accounts, and no information about them leaves the home server.</p>
+
+  <h2>Contact</h2>
+  <p>Family Quest is run by the family that uses it. Questions can go to the developer contact listed on the app's Google sign-in screen.</p>
+
+  <p><a href="index.html">← Family Quest</a></p>
+</main>
+</body>
+</html>
